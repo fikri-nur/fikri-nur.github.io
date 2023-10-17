@@ -1,0 +1,82 @@
+/* CSS For Folder tree with connecting lines */
+.folder-tree {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.folder-tree li {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+    position: relative;
+}
+
+.folder-tree i {
+    margin-right: 5px;
+}
+
+.folder-tree a {
+    margin-right: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: normal;
+    font-family: "Arial", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* Warna teks yang sesuai */
+    transition: color 0.2s;
+    display: inline-block;
+    width: 125px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.folder-tree a:hover {
+    color: #007bff;
+    /* Warna teks hover yang sesuai */
+}
+
+/* Garis penghubung antara parent dan child folder */
+.folder::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    border-left: 1px solid #ccc; /* Warna garis yang sesuai */
+    height: 100%;
+}
+
+/* Styling untuk ikon folder dan file */
+.folder i {
+    margin-right: 5px;
+    color: #416DB6;
+}
+
+.folder-tree .file {
+
+}
+
+.folder-tree .file a {
+    
+    margin-left: 3.5px;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: "Arial", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* Warna teks yang sesuai */
+    transition: color 0.2s;
+    display: inline-block;
+    width: 125px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.file i {
+    margin-right: 5px;
+    color: #C41230;
+}
+
+.folder ul.folder-tree {
+    display: none;
+}

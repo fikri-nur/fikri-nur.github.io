@@ -1,0 +1,43 @@
+/* CSS for logo in the nav */
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    max-height: 50px;
+    max-width: 100px;
+    /* Sesuaikan dengan ukuran logo Anda */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* Jarak antara logo dan teks */
+}
+
+.navbar-text.text-logo {
+    font-weight: 600;
+    /* Sesuaikan dengan gaya teks Anda */
+    color: #4e73df;
+    /* Warna teks */
+    font-size: 18px;
+    /* Ukuran teks */
+    margin-top: 5px;
+    /* Penyesuaian margin atas */
+}
+
+.sidebar-brand-icon img {
+    max-width: 45px;
+    /* Lebar maksimum logo */
+    height: auto;
+    /* Biarkan tinggi mengikuti lebar */
+    display: block;
+    /* Hapus spasi tambahan jika ada */
+    margin: 0 auto;
+    /* Pusatkan logo horizontal */
+    padding: 3px;
+    /* Ruang di sekitar logo (jika diperlukan) */
+    border-radius: 50%;
+    /* Buat logo menjadi lingkaran (jika diperlukan) */
+    background-color: #fff;
+    /* Warna latar belakang logo (jika diperlukan) */
+}
